@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' ,sans-serif;
+    transition: 0.2s;
+    text-transform: capitalize;
+    /* color:#d3d3d3; */
+}
+body{
+    background-color: #121416;
+    color:whitesmoke;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    margin:0 auto;
+    height:50px;
+    align-items: center;
+    position:sticky;
+    top:0;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.header a,.icons a,.btns a,.contact a{
+    color:#d3d3d3;
+    text-decoration: none;
+}
+.nav-content a:hover, .colored ,.icons a:hover{
+    color:#BD8560
+}
+.nav-content{
+    display:flex;
+    justify-content: space-around !important;
+    width:50%;
+}
+span{
+    color:#BD8560;
+}
+.talk a{
+    display:flex;
+    gap:5px;
+    align-items: center;
+    background: linear-gradient(45deg,#E3B497, #BD8560 );
+    color:black ;
+    padding:8px;
+    border-radius: 6px;
+}
+/* home styles */
+.image-1{
+    margin-top: 40px;
+    width:50%;
+}
+.image-1 img{
+    width:95%;
+    border-radius: 20%;
+}
+.home ,.about ,.services,.contact{
+    display:flex;
+    justify-content: space-between;
+    height:500px;
+    width:80%;
+    margin:0 auto;
+    /* gap:10%; */
+}
+.txt-wrap{
+    display:flex;
+    align-items: center;
+    width:50%;
+}
+h1{
+    font-size: 40px;
+}
+.icons{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+}
+.btns{
+    margin-top: 40px;
+    display: flex;
+    gap:10px;
+}
+.btns a{
+    padding:7px;
+    border-radius: 7px;
+    background-color: #2d2d2e;
+}
+.cv{
+    background: linear-gradient(45deg,#E3B497, #BD8560 );
+    color:black !important;
+}
+.btns a:hover{
+    transform:scale(1.1);
+}
+/* about me styles */
+.about{
+    margin-top: 80px;
+    padding-top: 50px;
+}
+.wrap{
+    /* background-color: #343131; */
+    padding-bottom: 50px;
+}
+.image-2 img{
+    width:80%;
+    border:2px solid #A9533A;
+    border-radius: 20%;
+}
+.about .txt{
+    width:75%;
+    padding-top: 10px;
+}
+.abt{
+    border:1px solid rgb(89, 89, 89);
+    width:100px;
+    border-radius: 5px;
+    padding:2px;
+    font-size: 12px;
+    text-align: center;
+}
+/* services */
+.services{
+    margin-top: 60px;
+    padding-top: 60px ;
+    /* gap:10%; */
+}
+.serve{
+    width:50%;
+    padding-left: 18px;
+}
+.new{
+    padding-top: 40px;
+}
+.sections{
+    margin-bottom: 25px;
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #BD8560;
+    align-items: center;
+    height: 80px;
+}
+.icon{
+    background: linear-gradient(45deg,#E3B497, #BD8560 );
+    padding: 5px;
+    border-radius: 50%;
+    color:black;
+}
+.projects{
+    width:80%;
+    margin:50px auto 50px;
+}
+.pro-w{
+    display: flex;
+}
+.pros{
+    padding-right: 20px;
+}
+.pros:hover{
+    transform: scale(1.05);
+}
+.pros img{
+    width: 100%;
+    border-radius: 10px;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* contact */
+.contact{
+    padding-top: 80px ;
+}
+.footer{
+    text-align: center;
+    background-color: #2d2d2e;
+    height:40px;
+    padding-top: 10px;
+}
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    .nav-content, .talk {
+        display: none;
+    }
+
+    /* General adjustments */
+    .home, .about, .services, .contact, .projects {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        height: auto;
+    }
+    .home .txt-wrap, .about .txt, .serve, .pro-w, .contact div {
+        width: 100%;
+    }
+    .image-1 {
+        width: 100%;
+        text-align: center;
+    }
+    .image-1 img {
+        width: 80%;
+        border-radius: 20%;
+    }
+    .image-2 ,.txt h3{
+        display: none;
+    }
+    .txt-wrap, .txt {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .btns {
+        flex-direction: column;
+        align-items: center;
+    }
+    .btns a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .projects .pro-w {
+        display: block;
+    }
+    .projects .pros {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .projects .pros img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
